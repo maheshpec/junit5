@@ -41,6 +41,21 @@ on GitHub.
 
 * ❓
 
+[[release-notes-5.5.0-M1-junit-jupiter-api]]
+=== JUnit Platform
+
+==== Bug Fixes
+
+* ❓
+
+==== Deprecations and Breaking Changes
+
+* ❓
+
+==== New Features and Improvements
+
+* `assertTrue` and `assertFalse` now send the acutal values for enhanced IDE support.
+
 
 [[release-notes-5.5.0-M1-junit-vintage]]
 === JUnit Vintage

@@ -10,6 +10,7 @@
 
 package org.junit.jupiter.api;
 
+import static org.junit.jupiter.api.AssertionTestUtils.assertExpectedAndActualValues;
 import static org.junit.jupiter.api.AssertionTestUtils.assertMessageEquals;
 import static org.junit.jupiter.api.AssertionTestUtils.expectAssertionFailedError;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -55,6 +56,7 @@ class AssertFalseAssertionsTests {
 		}
 		catch (AssertionFailedError ex) {
 			assertMessageEquals(ex, "expected: <false> but was: <true>");
+			assertExpectedAndActualValues(ex,  false, true);
 		}
 	}
 
@@ -66,6 +68,7 @@ class AssertFalseAssertionsTests {
 		}
 		catch (AssertionFailedError ex) {
 			assertMessageEquals(ex, "test ==> expected: <false> but was: <true>");
+			assertExpectedAndActualValues(ex,  false, true);
 		}
 	}
 
@@ -77,6 +80,7 @@ class AssertFalseAssertionsTests {
 		}
 		catch (AssertionFailedError ex) {
 			assertMessageEquals(ex, "test ==> expected: <false> but was: <true>");
+			assertExpectedAndActualValues(ex,  false, true);
 		}
 	}
 
@@ -88,6 +92,7 @@ class AssertFalseAssertionsTests {
 		}
 		catch (AssertionFailedError ex) {
 			assertMessageEquals(ex, "test ==> expected: <false> but was: <true>");
+			assertExpectedAndActualValues(ex,  false, true);
 		}
 	}
 
@@ -99,6 +104,7 @@ class AssertFalseAssertionsTests {
 		}
 		catch (AssertionFailedError ex) {
 			assertMessageEquals(ex, "test ==> expected: <false> but was: <true>");
+			assertExpectedAndActualValues(ex,  false, true);
 		}
 	}
 
